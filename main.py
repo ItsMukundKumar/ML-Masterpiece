@@ -13,7 +13,6 @@ st.title("🤖 Machine Learning Project Portfolio")
 st.write("A curated collection of my deployed Machine Learning and NLP applications.")
 st.divider()
 
-
 # --------------------------------------------------
 # Reusable Model Card
 # --------------------------------------------------
@@ -28,9 +27,8 @@ def model_card(model_name, description, app_link, tags):
         st.write(description)
         st.link_button("🚀 Open App", app_link)
 
-
 # --------------------------------------------------
-# Portfolio Grid
+# Row 1
 # --------------------------------------------------
 col1, col2 = st.columns(2)
 
@@ -52,6 +50,9 @@ with col2:
         ["NLP", "Sentiment Analysis", "ML"],
     )
 
+# --------------------------------------------------
+# Row 2
+# --------------------------------------------------
 col3, col4 = st.columns(2)
 
 with col3:
@@ -73,7 +74,7 @@ with col4:
     )
 
 # --------------------------------------------------
-# NEW ROW (Academic Performance Predictor)
+# Row 3
 # --------------------------------------------------
 col5, col6 = st.columns(2)
 
@@ -84,6 +85,15 @@ with col5:
         "and extracurricular activities using KNN Regression.",
         "https://itsmukundkumar-academic-performance-predictor-main-xknn83.streamlit.app/",
         ["Education", "KNN Regression", "StandardScaler"],
+    )
+
+with col6:
+    model_card(
+        "Loan Approval Predictor",
+        "Predicts loan default probability using a Naive Bayes classifier and "
+        "converts risk estimation into loan approval or rejection decisions.",
+        "https://itsmukundkumar-loan-approval-prediction-app-znbfex.streamlit.app/",
+        ["Finance", "Naive Bayes", "Risk Prediction"],
     )
 
 # --------------------------------------------------
