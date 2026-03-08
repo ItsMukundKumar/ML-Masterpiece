@@ -99,6 +99,20 @@ projects = [
         "demo": "https://itsmukundkumar-loan-approval-prediction-app-znbfex.streamlit.app/",
         "code": "https://github.com/ItsMukundKumar/Loan-Approval-Prediction",
     },
+    {
+    "title": "Disease Risk Predictor",
+    "icon": "🩺",
+    "category": "Healthcare",
+    "description": "Predicts disease risk using lifestyle and health metrics such as BMI, sleep, blood pressure, and cholesterol.",
+    "algorithm": "Decision Tree",
+    "dataset": "Health Lifestyle Dataset",
+    "problem": "Classification",
+    "accuracy": "85%",
+    "tech": ["Python", "Decision Tree", "Scikit-learn", "Streamlit"],
+    "deploy": "Streamlit",
+    "demo": "https://itsmukundkumar-disease-risk-predictor-main-ssjkjh.streamlit.app/",
+    "code": "https://github.com/ItsMukundKumar/disease-risk-predictor",
+    }
 ]
 
 # --------------------------------------------------
