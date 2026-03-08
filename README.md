@@ -40,6 +40,11 @@ Each project demonstrates end-to-end implementation — from preprocessing and m
     <h3>🏦 Loan Approval Predictor</h3>
     <p>Predicts loan default probability using Naive Bayes and converts risk assessment into approval/rejection decisions.</p>
   </li>
+  <li>
+  <h3>🩺 Disease Risk Predictor</h3>
+  <p>Predicts disease risk using lifestyle and health indicators such as BMI, sleep hours, daily steps, blood pressure, cholesterol, and family history using a Decision Tree classifier.</p>
+</li>
+
 </ul>
 
 <hr>
