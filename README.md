@@ -1,4 +1,4 @@
-<h1 align="center">🤖 Machine Learning Model Portfolio</h1>
+<h1 align="center">🤖 Machine Learning Application Portfolio</h1>
 
 <p align="center">
 A Streamlit-based portfolio showcasing multiple deployed Machine Learning and NLP applications.
@@ -40,6 +40,24 @@ Each project demonstrates end-to-end implementation — from preprocessing and m
     <h3>🏦 Loan Approval Predictor</h3>
     <p>Predicts loan default probability using Naive Bayes and converts risk assessment into approval/rejection decisions.</p>
   </li>
+  <li>
+  <h3>🩺 Disease Risk Predictor</h3>
+  <p>
+  Predicts disease risk based on lifestyle and health metrics such as 
+  <b>BMI, sleep hours, daily steps, blood pressure, cholesterol, and heart rate</b>
+  using a Decision Tree classifier.
+  </p>
+</li>
+
+<li>
+  <h3>💊 Drug Classification Predictor</h3>
+  <p>
+  Predicts the most suitable drug for a patient based on medical attributes 
+  such as <b>Age, Sex, Blood Pressure, Cholesterol, and Na_to_K ratio</b> 
+  using a Decision Tree model.
+  </p>
+</li>
+
 </ul>
 
 <hr>

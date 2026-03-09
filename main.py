@@ -112,6 +112,20 @@ projects = [
     "deploy": "Streamlit",
     "demo": "https://itsmukundkumar-disease-risk-predictor-main-ssjkjh.streamlit.app/",
     "code": "https://github.com/ItsMukundKumar/disease-risk-predictor",
+    },
+    {
+    "title": "Drug Classification Predictor",
+    "icon": "💊",
+    "category": "Healthcare",
+    "description": "Predicts the most suitable drug for a patient based on medical attributes like age, sex, blood pressure, cholesterol, and Na_to_K ratio.",
+    "algorithm": "Decision Tree",
+    "dataset": "Drug Dataset",
+    "problem": "Classification",
+    "accuracy": "91%",
+    "tech": ["Python", "Decision Tree", "Scikit-learn", "Streamlit"],
+    "deploy": "Streamlit",
+    "demo": "https://itsmukundkumar-drug-classification-predictor-main-lr6e9a.streamlit.app/",
+    "code": "https://github.com/ItsMukundKumar/Drug-Classification-Predictor",
     }
 ]
 
