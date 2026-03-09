@@ -9,7 +9,6 @@ Each project demonstrates end-to-end implementation — from preprocessing and m
 <hr>
 
 <h2>🚀 Live Deployed Applications</h2>
-
 <ul>
   <li>
     <h3>🧠 Personality Type Predictor</h3>
@@ -38,26 +37,18 @@ Each project demonstrates end-to-end implementation — from preprocessing and m
 
   <li>
     <h3>🏦 Loan Approval Predictor</h3>
-    <p>Predicts loan default probability using Naive Bayes and converts risk assessment into approval/rejection decisions.</p>
+    <p>Predicts loan approval probability using Naive Bayes based on financial attributes.</p>
   </li>
+
   <li>
-  <h3>🩺 Disease Risk Predictor</h3>
-  <p>
-  Predicts disease risk based on lifestyle and health metrics such as 
-  <b>BMI, sleep hours, daily steps, blood pressure, cholesterol, and heart rate</b>
-  using a Decision Tree classifier.
-  </p>
-</li>
+    <h3>🩺 Disease Risk Predictor</h3>
+    <p>Predicts disease risk using lifestyle and health metrics such as <b>BMI, sleep hours, daily steps, blood pressure, and cholesterol</b> using a Decision Tree model.</p>
+  </li>
 
-<li>
-  <h3>💊 Drug Classification Predictor</h3>
-  <p>
-  Predicts the most suitable drug for a patient based on medical attributes 
-  such as <b>Age, Sex, Blood Pressure, Cholesterol, and Na_to_K ratio</b> 
-  using a Decision Tree model.
-  </p>
-</li>
-
+  <li>
+    <h3>💊 Drug Classification Predictor</h3>
+    <p>Predicts the most suitable drug for a patient based on <b>Age, Sex, Blood Pressure, Cholesterol, and Na_to_K ratio</b> using a Decision Tree classifier.</p>
+  </li>
 </ul>
 
 <hr>
