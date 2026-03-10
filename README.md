@@ -49,6 +49,10 @@ Each project demonstrates end-to-end implementation — from preprocessing and m
     <h3>💊 Drug Classification Predictor</h3>
     <p>Predicts the most suitable drug for a patient based on <b>Age, Sex, Blood Pressure, Cholesterol, and Na_to_K ratio</b> using a Decision Tree classifier.</p>
   </li>
+    <li>
+    <h3>🚗 Old Car Price Predictor</h3>
+    <p>Predicts the <b>resale price of a used car</b> based on attributes such as car name, year, fuel type, transmission, present price, and kilometers driven using a Decision Tree Regression model.</p>
+  </li>
 
 </ul>
 
