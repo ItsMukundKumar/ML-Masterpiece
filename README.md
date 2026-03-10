@@ -49,6 +49,7 @@ Each project demonstrates end-to-end implementation — from preprocessing and m
     <h3>💊 Drug Classification Predictor</h3>
     <p>Predicts the most suitable drug for a patient based on <b>Age, Sex, Blood Pressure, Cholesterol, and Na_to_K ratio</b> using a Decision Tree classifier.</p>
   </li>
+
 </ul>
 
 <hr>

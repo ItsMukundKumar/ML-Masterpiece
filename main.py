@@ -126,6 +126,20 @@ projects = [
     "deploy": "Streamlit",
     "demo": "https://itsmukundkumar-drug-classification-predictor-main-lr6e9a.streamlit.app/",
     "code": "https://github.com/ItsMukundKumar/Drug-Classification-Predictor",
+    },
+    {
+    "title": "Old Car Price Predictor",
+    "icon": "🚗",
+    "category": "Machine Learning",
+    "description": "Predicts the resale price of a used car based on features such as car name, year, fuel type, transmission, and kilometers driven.",
+    "algorithm": "Decision Tree Regressor",
+    "dataset": "Car Dataset",
+    "problem": "Regression",
+    "accuracy": "81%",
+    "tech": ["Python", "Scikit-learn", "Pandas", "Streamlit"],
+    "deploy": "Streamlit",
+    "demo": "https://itsmukundkumar-old-car-price-predictor-main-vb4yzk.streamlit.app/",
+    "code": "https://github.com/ItsMukundKumar/Old-Car-Price-Predictor",
     }
 ]
 
