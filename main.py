@@ -1,19 +1,179 @@
 import streamlit as st
 
-# --------------------------------------------------
-# PAGE CONFIG
-# --------------------------------------------------
-
-st.set_page_config(
-    page_title="Mukund Kumar | ML Portfolio",
-    page_icon="🤖",
-    layout="wide",
-)
+st.set_page_config(page_title="Mukund Kumar | ML Portfolio", layout="wide")
 
 # --------------------------------------------------
-# PROJECT DATA (UNCHANGED)
+# CSS
 # --------------------------------------------------
 
+st.markdown("""
+<style>
+
+.stApp{
+background:#0f172a;
+color:#f8fafc;
+font-family:Inter,sans-serif;
+}
+
+.block-container{
+max-width:1100px;
+padding-top:40px;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:14px 0;
+border-bottom:1px solid #334155;
+margin-bottom:40px;
+}
+
+.nav-title{
+font-size:20px;
+font-weight:600;
+}
+
+.nav-menu{
+color:#94a3b8;
+font-size:14px;
+}
+
+/* HERO */
+
+.hero{
+padding:20px 0 40px 0;
+}
+
+.hero-title{
+font-size:46px;
+font-weight:700;
+margin-bottom:10px;
+}
+
+.hero-sub{
+font-size:18px;
+color:#94a3b8;
+margin-bottom:24px;
+max-width:600px;
+}
+
+/* BUTTON */
+
+.button{
+background:#3b82f6;
+color:white !important;
+padding:10px 18px;
+border-radius:6px;
+text-decoration:none !important;
+margin-right:10px;
+font-size:14px;
+}
+
+.button:hover{
+background:#22d3ee;
+color:#0f172a !important;
+}
+
+/* METRICS */
+
+.metric-card{
+background:#1e293b;
+border:1px solid #334155;
+border-radius:8px;
+padding:18px;
+text-align:center;
+}
+
+.metric-number{
+font-size:28px;
+font-weight:600;
+}
+
+.metric-label{
+font-size:13px;
+color:#94a3b8;
+}
+
+/* PROJECTS */
+
+.project-grid{
+margin-top:30px;
+}
+
+.project-card{
+background:#1e293b;
+border:1px solid #334155;
+border-radius:8px;
+padding:18px;
+margin-bottom:20px;
+}
+
+.project-title{
+font-size:18px;
+font-weight:600;
+margin-bottom:6px;
+}
+
+.project-category{
+font-size:13px;
+color:#94a3b8;
+margin-bottom:10px;
+}
+
+.project-desc{
+font-size:14px;
+margin-bottom:12px;
+}
+
+.tech{
+display:inline-block;
+background:#334155;
+padding:4px 8px;
+border-radius:4px;
+font-size:12px;
+margin:2px;
+}
+
+.accuracy{
+color:#10b981;
+font-weight:600;
+}
+
+/* CONTACT */
+
+.contact-box{
+background:#1e293b;
+border:1px solid #334155;
+padding:16px;
+border-radius:8px;
+text-align:center;
+}
+
+.contact-box a{
+color:#3b82f6;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+.footer{
+margin-top:50px;
+border-top:1px solid #334155;
+padding-top:20px;
+text-align:center;
+font-size:14px;
+color:#94a3b8;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+# --------------------------------------------------
+# PROJECT DATA
+# --------------------------------------------------
 projects = [
     {
         "title": "Personality Type Predictor",
@@ -41,7 +201,7 @@ projects = [
         "tech": ["Python", "NLP", "Scikit-learn", "Streamlit"],
         "deploy": "Streamlit",
         "demo": "https://itsmukundkumar-amazon-review-sentiment-app-zwvhe2.streamlit.app/",
-        "code": "#",
+        "code": "https://github.com/ItsMukundKumar/amazon-review-sentiment",
     },
     {
         "title": "Email Spam Predictor",
@@ -100,46 +260,60 @@ projects = [
         "code": "https://github.com/ItsMukundKumar/Loan-Approval-Prediction",
     },
     {
-    "title": "Disease Risk Predictor",
-    "icon": "🩺",
-    "category": "Healthcare",
-    "description": "Predicts disease risk using lifestyle and health metrics such as BMI, sleep, blood pressure, and cholesterol.",
-    "algorithm": "Decision Tree",
-    "dataset": "Health Lifestyle Dataset",
-    "problem": "Classification",
-    "accuracy": "85%",
-    "tech": ["Python", "Decision Tree", "Scikit-learn", "Streamlit"],
-    "deploy": "Streamlit",
-    "demo": "https://itsmukundkumar-disease-risk-predictor-main-ssjkjh.streamlit.app/",
-    "code": "https://github.com/ItsMukundKumar/disease-risk-predictor",
+        "title": "Disease Risk Predictor",
+        "icon": "🩺",
+        "category": "Healthcare",
+        "description": "Predicts disease risk using lifestyle and health metrics.",
+        "algorithm": "Decision Tree",
+        "dataset": "Health Lifestyle Dataset",
+        "problem": "Classification",
+        "accuracy": "85%",
+        "tech": ["Python", "Decision Tree", "Scikit-learn", "Streamlit"],
+        "deploy": "Streamlit",
+        "demo": "https://itsmukundkumar-disease-risk-predictor-main-ssjkjh.streamlit.app/",
+        "code": "https://github.com/ItsMukundKumar/disease-risk-predictor",
     },
     {
-    "title": "Drug Classification Predictor",
-    "icon": "💊",
-    "category": "Healthcare",
-    "description": "Predicts the most suitable drug for a patient based on medical attributes like age, sex, blood pressure, cholesterol, and Na_to_K ratio.",
-    "algorithm": "Decision Tree",
-    "dataset": "Drug Dataset",
-    "problem": "Classification",
-    "accuracy": "91%",
-    "tech": ["Python", "Decision Tree", "Scikit-learn", "Streamlit"],
-    "deploy": "Streamlit",
-    "demo": "https://itsmukundkumar-drug-classification-predictor-main-lr6e9a.streamlit.app/",
-    "code": "https://github.com/ItsMukundKumar/Drug-Classification-Predictor",
+        "title": "Drug Classification Predictor",
+        "icon": "💊",
+        "category": "Healthcare",
+        "description": "Predicts the most suitable drug for a patient.",
+        "algorithm": "Decision Tree",
+        "dataset": "Drug Dataset",
+        "problem": "Classification",
+        "accuracy": "91%",
+        "tech": ["Python", "Decision Tree", "Scikit-learn", "Streamlit"],
+        "deploy": "Streamlit",
+        "demo": "https://itsmukundkumar-drug-classification-predictor-main-lr6e9a.streamlit.app/",
+        "code": "https://github.com/ItsMukundKumar/Drug-Classification-Predictor",
     },
     {
-    "title": "Old Car Price Predictor",
-    "icon": "🚗",
-    "category": "Machine Learning",
-    "description": "Predicts the resale price of a used car based on features such as car name, year, fuel type, transmission, and kilometers driven.",
-    "algorithm": "Decision Tree Regressor",
-    "dataset": "Car Dataset",
-    "problem": "Regression",
-    "accuracy": "81%",
-    "tech": ["Python", "Scikit-learn", "Pandas", "Streamlit"],
-    "deploy": "Streamlit",
-    "demo": "https://itsmukundkumar-old-car-price-predictor-main-vb4yzk.streamlit.app/",
-    "code": "https://github.com/ItsMukundKumar/Old-Car-Price-Predictor",
+        "title": "Old Car Price Predictor",
+        "icon": "🚗",
+        "category": "Machine Learning",
+        "description": "Predicts used car resale price.",
+        "algorithm": "Decision Tree Regressor",
+        "dataset": "Car Dataset",
+        "problem": "Regression",
+        "accuracy": "81%",
+        "tech": ["Python", "Scikit-learn", "Pandas", "Streamlit"],
+        "deploy": "Streamlit",
+        "demo": "https://itsmukundkumar-old-car-price-predictor-main-vb4yzk.streamlit.app/",
+        "code": "https://github.com/ItsMukundKumar/Old-Car-Price-Predictor",
+    },
+    {
+        "title": "USA Housing Price Predictor",
+        "icon": "🏠",
+        "category": "Machine Learning",
+        "description": "Predicts house prices using regression.",
+        "algorithm": "Decision Tree Regressor",
+        "dataset": "USA Housing Dataset",
+        "problem": "Regression",
+        "accuracy": "79%",
+        "tech": ["Python", "Scikit-learn", "Pandas", "Streamlit"],
+        "deploy": "Streamlit",
+        "demo": "https://itsmukundkumar-usa-house-price-predictor-main-x8ifkz.streamlit.app/",
+        "code": "https://github.com/ItsMukundKumar/USA-House-Price-Predictor",
     }
 ]
 
@@ -147,297 +321,144 @@ projects = [
 # METRICS
 # --------------------------------------------------
 
-num_projects = len(projects)
-algorithms = len(set(p["algorithm"] for p in projects))
-deployed = len(projects)
+num_projects=len(projects)
+algorithms=len(set(p["algorithm"] for p in projects))
+deployed=len(projects)
 
 # --------------------------------------------------
-# GLOBAL CSS
+# NAVBAR
 # --------------------------------------------------
 
-st.markdown(
-"""
-<style>
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
-
-html, body, [class*="css"]  {
-font-family: 'Inter', sans-serif;
-}
-
-.stApp{
-background: linear-gradient(135deg,#020617,#0f172a,#1e293b);
-color:white;
-}
-
-/* HERO */
-
-.hero{
-text-align:center;
-padding-top:40px;
-padding-bottom:20px;
-}
-
-.hero-title{
-font-size:52px;
-font-weight:800;
-background: linear-gradient(90deg,#6366f1,#22d3ee);
--webkit-background-clip:text;
-color:transparent;
-}
-
-.hero-sub{
-color:#94a3b8;
-font-size:20px;
-}
-
-/* METRICS */
-
-.metric-box{
-background: rgba(255,255,255,0.05);
-padding:25px;
-border-radius:16px;
-text-align:center;
-border:1px solid rgba(255,255,255,0.1);
-}
-
-/* PROJECT CARDS */
-
-.card{
-background: rgba(255,255,255,0.05);
-border-radius:18px;
-padding:22px;
-border:1px solid rgba(255,255,255,0.1);
-margin-bottom:20px;
-transition:0.25s;
-backdrop-filter:blur(8px);
-}
-
-.card:hover{
-transform:translateY(-6px);
-border:1px solid #6366f1;
-}
-
-/* BADGES */
-
-.badge{
-display:inline-block;
-padding:5px 10px;
-border-radius:12px;
-background:#1e293b;
-font-size:12px;
-margin:3px;
-border:1px solid #334155;
-}
-
-/* BUTTONS */
-
-.btn{
-display:inline-block;
-padding:10px 16px;
-border-radius:10px;
-background:#6366f1;
-color:white !important;
-text-decoration:none !important;
-font-size:14px;
-font-weight:600;
-}
-
-.btn:hover{
-background:#4f46e5;
-color:white !important;
-text-decoration:none !important;
-}
-
-/* SIDEBAR NAVIGATION */
-
-section[data-testid="stSidebar"]{
-background: linear-gradient(180deg,#020617,#0f172a);
-}
-
-div[role="radiogroup"] > label {
-background: rgba(255,255,255,0.04);
-padding:12px 14px;
-margin-bottom:8px;
-border-radius:10px;
-border:1px solid rgba(255,255,255,0.08);
-transition: all 0.2s ease;
-cursor:pointer;
-}
-
-div[role="radiogroup"] > label:hover{
-background: rgba(99,102,241,0.2);
-border:1px solid #6366f1;
-}
-
-div[role="radiogroup"] label[data-checked="true"]{
-background: linear-gradient(90deg,#6366f1,#22d3ee);
-border:1px solid #6366f1;
-color:white;
-font-weight:600;
-}
-
-</style>
-""",
-unsafe_allow_html=True,
-)
+st.markdown("""
+<div class="navbar">
+<div class="nav-title">Mukund Kumar</div>
+<div class="nav-menu">Machine Learning Portfolio</div>
+</div>
+""", unsafe_allow_html=True)
 
 # --------------------------------------------------
-# SIDEBAR
+# HERO
 # --------------------------------------------------
 
-st.sidebar.markdown("### Menu")
-
-page = st.sidebar.radio(
-"",
-["🏠 Home", "📊 Projects", "📬 Contact"]
-)
-
-
-
-# --------------------------------------------------
-# HOME PAGE
-# --------------------------------------------------
-
-if page == "🏠 Home":
-
-    st.markdown(
-"""
+st.markdown("""
 <div class="hero">
-<div class="hero-title">Mukund Kumar</div>
-<div class="hero-sub">Machine Learning Developer • Data Analyst • Python Developer</div>
+
+<div class="hero-title">
+Machine Learning Developer
 </div>
-""",
-unsafe_allow_html=True
-)
 
-    c1, c2, c3 = st.columns(3)
-
-    with c1:
-        st.markdown(
-f"""
-<div class="metric-box">
-<h2>{num_projects}</h2>
-Projects
+<div class="hero-sub">
+Building predictive applications and data-driven solutions using Python and modern machine learning tools.
 </div>
-""",
-unsafe_allow_html=True)
 
-    with c2:
-        st.markdown(
-f"""
-<div class="metric-box">
-<h2>{algorithms}</h2>
-Algorithms
+<a class="button" href="#projects">View Projects</a>
+<a class="button" href="https://github.com/ItsMukundKumar">GitHub</a>
+
 </div>
-""",
-unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
-    with c3:
-        st.markdown(
-f"""
-<div class="metric-box">
-<h2>{deployed}</h2>
-Deployed Apps
+# --------------------------------------------------
+# METRICS
+# --------------------------------------------------
+
+col1,col2,col3 = st.columns(3)
+
+with col1:
+    st.markdown(f"""
+<div class="metric-card">
+<div class="metric-number">{num_projects}</div>
+<div class="metric-label">Projects</div>
 </div>
-""",
-unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
-    st.write("")
+with col2:
+    st.markdown(f"""
+<div class="metric-card">
+<div class="metric-number">{algorithms}</div>
+<div class="metric-label">Algorithms</div>
+</div>
+""", unsafe_allow_html=True)
 
-    st.markdown(
-"""
-I build machine learning applications that transform **data into meaningful predictions and insights**.
-
-**Focus Areas**
-
-• Machine Learning  
-• Data Analysis  
-• Predictive Modeling  
-• ML Deployment
-"""
-)
+with col3:
+    st.markdown(f"""
+<div class="metric-card">
+<div class="metric-number">{deployed}</div>
+<div class="metric-label">Deployed Apps</div>
+</div>
+""", unsafe_allow_html=True)
 
 # --------------------------------------------------
 # PROJECTS
 # --------------------------------------------------
 
-elif page == "📊 Projects":
+st.markdown("## Projects")
 
-    st.title("Machine Learning Projects")
+cols = st.columns(2)
 
-    search = st.text_input("Search Projects")
+for i,p in enumerate(projects):
 
-    categories = ["All"] + sorted(set(p["category"] for p in projects))
-    category = st.selectbox("Filter by Category", categories)
+    tech="".join([f"<span class='tech'>{t}</span>" for t in p["tech"]])
 
-    filtered = []
+    with cols[i%2]:
 
-    for p in projects:
-        if category != "All" and p["category"] != category:
-            continue
-        if search and search.lower() not in p["title"].lower():
-            continue
-        filtered.append(p)
+        st.markdown(f"""
+<div class="project-card">
 
-    cols = st.columns(2)
+<div class="project-title">{p["title"]}</div>
+<div class="project-category">{p["category"]}</div>
 
-    for i, project in enumerate(filtered):
+<div class="project-desc">{p["description"]}</div>
 
-        with cols[i % 2]:
+Algorithm: {p["algorithm"]}<br>
+Accuracy: <span class="accuracy">{p["accuracy"]}</span>
 
-            st.markdown('<div class="card">', unsafe_allow_html=True)
+<br><br>
 
-            st.subheader(project["icon"] + " " + project["title"])
+{tech}
 
-            st.write(project["description"])
+<br><br>
 
-            st.write("**Algorithm:**", project["algorithm"])
-            st.write("**Accuracy:**", project["accuracy"])
+<a class="button" href="{p["demo"]}">Live Demo</a>
+<a class="button" href="{p["code"]}">GitHub</a>
 
-            tech_html = "".join(
-                [f'<span class="badge">{t}</span>' for t in project["tech"]]
-            )
-
-            st.markdown(tech_html, unsafe_allow_html=True)
-
-            with st.expander("Project Details"):
-                st.write("Dataset:", project["dataset"])
-                st.write("Problem:", project["problem"])
-                st.write("Deployment:", project["deploy"])
-
-            st.markdown(
-f"""
-<a class="btn" href="{project["demo"]}" target="_blank">Live Demo</a>
-&nbsp;
-<a class="btn" href="{project["code"]}" target="_blank">GitHub</a>
-""",
-unsafe_allow_html=True
-)
-
-            st.markdown("</div>", unsafe_allow_html=True)
+</div>
+""", unsafe_allow_html=True)
 
 # --------------------------------------------------
 # CONTACT
 # --------------------------------------------------
 
-elif page == "📬 Contact":
+st.markdown("## Contact")
 
-    st.title("Connect")
+c1,c2,c3 = st.columns(3)
 
-    st.markdown(
-"""
-Interested in **machine learning projects**, **data analysis**, or **collaboration opportunities**.
+with c1:
+    st.markdown("""
+<div class="contact-box">
+<a href="https://github.com/ItsMukundKumar">GitHub</a>
+</div>
+""", unsafe_allow_html=True)
 
-Feel free to reach out.
-"""
-)
+with c2:
+    st.markdown("""
+<div class="contact-box">
+<a href="https://www.linkedin.com/in/mukund-kumar-shah/">LinkedIn</a>
+</div>
+""", unsafe_allow_html=True)
 
-    st.markdown(
-"""
-<a class="btn" href="https://github.com/ItsMukundKumar" target="_blank">GitHub</a>
+with c3:
+    st.markdown("""
+<div class="contact-box">
+<a href="mailto:youremail@gmail.com">Email</a>
+</div>
+""", unsafe_allow_html=True)
 
-<a class="btn" href="https://www.linkedin.com/in/mukund-kumar-shah/" target="_blank">LinkedIn</a>
-""",
-unsafe_allow_html=True
-)
+# --------------------------------------------------
+# FOOTER
+# --------------------------------------------------
+
+st.markdown("""
+<div class="footer">
+© 2026 Mukund Kumar — Machine Learning Developer
+</div>
+""", unsafe_allow_html=True)
