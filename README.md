@@ -53,6 +53,15 @@ Each project demonstrates end-to-end implementation — from preprocessing and m
     <h3>🚗 Old Car Price Predictor</h3>
     <p>Predicts the <b>resale price of a used car</b> based on attributes such as car name, year, fuel type, transmission, present price, and kilometers driven using a Decision Tree Regression model.</p>
   </li>
+  <li>
+  <h3>🚚 Food Delivery Time Predictor</h3>
+  <p>
+    Predicts the <b>estimated delivery time of food orders</b> using features such as 
+    <b>distance, weather conditions, traffic level, time of day, vehicle type, 
+    preparation time, and courier experience</b>. 
+    Built using a <b>Random Forest Regression model</b> and deployed with Streamlit.
+  </p>
+</li>
 
 </ul>
 

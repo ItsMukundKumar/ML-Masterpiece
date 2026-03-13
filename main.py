@@ -314,7 +314,21 @@ projects = [
         "deploy": "Streamlit",
         "demo": "https://itsmukundkumar-usa-house-price-predictor-main-x8ifkz.streamlit.app/",
         "code": "https://github.com/ItsMukundKumar/USA-House-Price-Predictor",
-    }
+    },
+    {
+    "title": "Food Delivery Time Predictor",
+    "icon": "🚚",
+    "category": "Machine Learning",
+    "description": "Predicts food delivery time using distance, weather, traffic, time of day, vehicle type, preparation time, and courier experience.",
+    "algorithm": "Random Forest Regressor",
+    "dataset": "Food Delivery Dataset",
+    "problem": "Regression",
+    "accuracy": "R² Score: 0.779",
+    "tech": ["Python", "Scikit-learn", "Pandas", "Streamlit"],
+    "deploy": "Streamlit",
+    "demo": "https://itsmukundkumar-food-delivery-times-main-vvhy8p.streamlit.app/",
+    "code": "https://github.com/ItsMukundKumar/Food-Delivery-Times",
+},
 ]
 
 # --------------------------------------------------
