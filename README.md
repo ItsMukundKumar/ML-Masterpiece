@@ -100,8 +100,8 @@ ML-Model-Portfolio/
 │
 ├── app.py
 ├── requirements.txt
-├── README.md
-└── model files (.pkl)
+└── README.md
+
 </pre>
 
 <hr>
