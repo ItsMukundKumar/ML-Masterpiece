@@ -111,8 +111,8 @@ ML-Model-Portfolio/
 <h3>1️⃣ Clone the Repository</h3>
 
 <pre>
-git clone https://github.com/your-username/your-repository-name.git
-cd your-repository-name
+git clone https://github.com/ItsMukundKumar/ML-Masterpiece
+cd ML-Masterpiece
 </pre>
 
 <h3>2️⃣ Install Dependencies</h3>
