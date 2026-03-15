@@ -329,6 +329,20 @@ projects = [
     "demo": "https://itsmukundkumar-food-delivery-times-main-vvhy8p.streamlit.app/",
     "code": "https://github.com/ItsMukundKumar/Food-Delivery-Times",
 },
+{
+    "title": "Student Exam Score Predictor",
+    "icon": "📊",
+    "category": "Machine Learning",
+    "description": "Predicts student exam scores using study hours, attendance, sleep habits, and learning methods.",
+    "algorithm": "XGBoost Regressor",
+    "dataset": "Student Performance Dataset",
+    "problem": "Regression",
+    "accuracy": "R² Score: 0.73",
+    "tech": ["Python", "XGBoost", "Scikit-learn", "Pandas", "Streamlit"],
+    "deploy": "Streamlit",
+    "demo": "https://itsmukundkumar-student-exam-score-prediction-main-p1uvwi.streamlit.app/",
+    "code": "https://github.com/ItsMukundKumar/Student-Exam-Score-Prediction",
+}
 ]
 
 # --------------------------------------------------
