@@ -116,6 +116,18 @@ The model is built using an <b>XGBoost Regressor</b>
 and optimized using <b>GridSearchCV</b>.
 </p>
 </li>
+<li>
+<h3>🎬 Movie Recommendation System</h3>
+<p>
+Recommends <b>top 10 similar movies</b> based on user input using 
+<b>Natural Language Processing (NLP)</b> techniques.
+<br>
+Movie descriptions are transformed using <b>TF-IDF vectorization</b> 
+and similarity is calculated using <b>Cosine Similarity</b> to find the most relevant movies.
+<br>
+Built with an interactive <b>Streamlit UI</b> for real-time recommendations.
+</p>
+</li>
 
 </ul>
 

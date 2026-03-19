@@ -342,6 +342,20 @@ projects = [
     "deploy": "Streamlit",
     "demo": "https://itsmukundkumar-student-exam-score-prediction-main-p1uvwi.streamlit.app/",
     "code": "https://github.com/ItsMukundKumar/Student-Exam-Score-Prediction",
+},
+{
+    "title": "Movie Recommendation System",
+    "icon": "🎬",
+    "category": "NLP",
+    "description": "Recommends similar movies using content-based filtering with TF-IDF and cosine similarity.",
+    "algorithm": "TF-IDF + Cosine Similarity",
+    "dataset": "TMDB Movies Dataset",
+    "problem": "Recommendation System",
+    "accuracy": "Content-based similarity (Top-10 recommendations)",
+    "tech": ["Python", "NLP", "Scikit-learn", "Pandas", "Streamlit"],
+    "deploy": "Streamlit",
+    "demo": "https://itsmukundkumar-movie-recommendation-system-main-iegscs.streamlit.app/",
+    "code": "https://github.com/ItsMukundKumar/Movie-Recommendation-System",
 }
 ]
 
@@ -379,8 +393,8 @@ Machine Learning Developer
 Building predictive applications and data-driven solutions using Python and modern machine learning tools.
 </div>
 
-<a class="button" href="#projects">View Projects</a>
-<a class="button" href="https://github.com/ItsMukundKumar">GitHub</a>
+<a class="button" href="https://github.com/ItsMukundKumar/">View Projects</a>
+<a class="button" href="https://github.com/ItsMukundKumar/ML-Masterpiece">GitHub</a>
 
 </div>
 """, unsafe_allow_html=True)
