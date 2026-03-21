@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Mukund Kumar | ML Portfolio", layout="wide")
+st.set_page_config(page_title="Mukund Kumar | ML Masterpiece", layout="wide")
 
 # --------------------------------------------------
 # CSS
@@ -374,7 +374,7 @@ deployed=len(projects)
 st.markdown("""
 <div class="navbar">
 <div class="nav-title">Mukund Kumar</div>
-<div class="nav-menu">Machine Learning Portfolio</div>
+<div class="nav-menu">Machine Learning Masterpiece</div>
 </div>
 """, unsafe_allow_html=True)
 
@@ -386,7 +386,7 @@ st.markdown("""
 <div class="hero">
 
 <div class="hero-title">
-Machine Learning Developer
+Machine Learning Masterpiece
 </div>
 
 <div class="hero-sub">
