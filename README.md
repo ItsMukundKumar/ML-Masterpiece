@@ -1,4 +1,4 @@
-<h1 align="center">🤖 Machine Learning Application Portfolio</h1>
+<h1 align="center">🤖 Machine Learning Masterpiece</h1>
 
 <p align="center">
 <b>Multiple Machine Learning & NLP Applications built with Python and deployed using Streamlit</b>
